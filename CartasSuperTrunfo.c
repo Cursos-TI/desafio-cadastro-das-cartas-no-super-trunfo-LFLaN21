@@ -3,6 +3,7 @@
 
 int main() {
 
+//Declarações de váriaveis. 
     char estado1, estado2;
     char codigoDaCarta1 [20], codigoDaCarta2[20];
     char nomeDaCidade1 [20], nomeDaCidade2[20];
@@ -11,6 +12,7 @@ int main() {
 
     printf("\n***SUPER TRUNFO***\n");
 
+//O print para inserção de dados da carta n1°.
     printf("\nCarta N1°\n");
 
     printf("Digite o estado: \n");
@@ -34,6 +36,7 @@ int main() {
     printf("Insira a quantidade de pontos turísticos:\n");
     scanf("%i", &pontoTuristico1);
 
+//O print para inserção de dados da carta n2°.
     printf("\nCarta N2°\n");
 
     printf("Digite o estado: \n");
@@ -56,27 +59,6 @@ int main() {
 
     printf("Insira a quantidade de pontos turísticos:\n");
     scanf("%i", &pontoTuristico2);
-
-//Calculo da densidade populacional e o PIB per capita.
-    densidadePopulacional1 = populacao1 / areakm1;
-    densidadePopulacional2 = populacao2 / areakm2;
-    PIBperCapita1 = PIB1 / populacao1;
-    PIBperCapita2 = PIB2 / populacao2;
-
-
-    printf("Densidade populacional da cidade 1: %.2f\n", densidadePopulacional1);
-    printf("Densidade populacional da cidade 2: %.2f\n", densidadePopulacional2);
-    printf("PIB per capita da cidade 1: %.2f\n", PIBperCapita1);
-    printf("PIB per capita da cidade 2: %.2f\n", PIBperCapita2);
-
-    if (densidadePopulacional1 > densidadePopulacional2) {
-        printf("A carta 2 Venceu!\n");
-    } else if (densidadePopulacional1 < densidadePopulacional2) {
-        printf("A carta 1 Venceu!\n");
-    } else {
-        printf("\n***EMPATOU***\n");
-    }
-
 
 
     return 0;
